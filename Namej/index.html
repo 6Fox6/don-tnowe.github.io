@@ -1,0 +1,248 @@
+<html>
+	<head>
+		<style>
+			body{
+			font-size:50px;
+			background-color:#663300;
+			-moz-user-select: none;
+			-khtml-user-select: none;
+			user-select: none;  
+			}
+			.ketch{
+			position:absolute;
+			}
+			.obj
+			{
+				border:1px black solid;
+				background-color:red;
+				border-radius:40px;
+				width:80px;
+				height:80px;
+				position:absolute;
+			}
+			.bit
+			{
+				border:1px black solid;
+				background-color:#BB0000;
+				border-radius:25px;
+				width:50px;
+				height:50px;
+				position:absolute;
+			}
+			#text
+			{
+				position:absolute;
+				background-color:white;
+				border:4px black solid;
+				width:400px;
+				height:80px;
+				position:relative;
+			}
+			#text2
+			{
+				position:absolute;
+				background-color:#FFFFDD;
+				border:4px black solid;
+				width:400px;
+				height:80px;
+				position:relative;
+			}
+			#bimba
+			{
+				border:1px black solid;
+				background-color:#332200;
+				border-radius:50px;
+				width:100px;
+				height:100px;
+				position:absolute;
+				zIndex:9999;
+			}
+		</style>
+	</head>
+	<body id="body" onmousemove=mo(event)>
+	<div id="text"></div>
+	<div id="text2"></div>
+	<img id="bimba" src='b.png' onmousemove=go()>
+		<script>
+		
+		var count=6;
+		var elements=[];
+		var bits=[]
+		var n=[];
+		var opac=[];
+		var udk=0;
+		var dx=[], dy=[];
+		var bimba=document.getElementById('bimba');
+		var bomdx=0, bomdy=0;
+		var bitdx=[], bitdy=[];
+		var dropbits=0;
+		var body=document.getElementById('body');
+		var cx=body.clientWidth;
+		var cy=body.clientHeight;
+		var cronomant=30;
+		
+		var o4ki=0;
+		
+		for(i=0; i<count; ++i)
+		{		
+			var index=elements.length;
+			elements[index]=document.createElement('div');
+			elements[index].className='obj';
+			elements[index].onmousemove=cl;
+			body.appendChild(elements[index]);
+			elements[index].style.left=Math.random()*(cx-60)+'px';
+			elements[index].style.top=Math.random()*(cy)+'px';
+			elements[index].style.zIndex=2;
+			dy[index]=-(Math.random()*cy/2+cy)/50;
+			dx[index]=Math.random()*20-10;
+			
+		}
+			bimba.style.left=Math.random()*(cx-60)+'px';
+			bimba.style.top=Math.random()*(cy/2)+'px';
+			bomdx=Math.random()*10-10;
+			bomdy=-(Math.random()*cy/2+cy)/50;
+		function move()
+		{
+			for(var i=0; i<count; ++i)
+			{
+				elements[i].style.top=parseInt(elements[i].style.top)+dy[i]+'px';
+				elements[i].style.left=parseInt(elements[i].style.left)+dx[i]+'px';
+				dy[i]+=1;
+			
+				if(parseInt(elements[i].style.top)>cy+10)
+					{
+					elements[i].style.left=Math.random()*(cx-80);
+					dx[i]=Math.random()*10-10;
+					dy[i]=-(Math.random()*cx/2+cx)/70;
+					elements[i].style.top=cy+10+'px';
+					}
+				if(parseInt(elements[i].style.left)>cx+160)
+					elements[i].style.left=parseInt(elements[i].style.left)-cx+'px';
+				if(parseInt(elements[i].style.left)<-80)
+					elements[i].style.left=parseInt(elements[i].style.left)+cx+'px';
+				
+			}
+			
+			bimba.style.top=parseInt(bimba.style.top)+bomdy+'px';
+			bimba.style.left=parseInt(bimba.style.left)+bomdx+'px';
+			bomdy+=1;
+		
+			if(parseInt(bimba.style.top)>cy+160)
+				{
+				bimba.style.left=Math.random()*(cx-80);
+				bomdx=Math.random()*10-10;
+				bomdy=-(Math.random()*cx/2+cx)/70;
+				bimba.style.top=cy+160+'px';
+				bimba.style.zIndex=5;
+				}
+			if(parseInt(bimba.style.left)>cx+160)
+				bimba.style.left=parseInt(bimba.style.left)-cx+'px';
+			if(parseInt(bimba.style.left)<-80)
+				bimba.style.left=parseInt(bimba.style.left)+cx+'px';
+			var b=document.getElementById('text2')
+			cronomant-=0.04
+			b.innerHTML=('vremya: <b>'+Math.floor(cronomant*10)/10+'</b>')
+			if(cronomant<0)
+				document.write('vremya vishlo(((((((((((( <br/> i sobral ochkov '+o4ki);
+		}
+		function bitmove()
+		{
+			for(var i=dropbits; i<bits.length; ++i)
+			{
+				bits[i].style.top=parseInt(bits[i].style.top)+bitdy[i]+'px';
+				bits[i].style.left=parseInt(bits[i].style.left)+bitdx[i]+'px';
+				bitdy[i]+=1;
+			
+				if(parseInt(bits[i].style.top)>cy+400)
+					{
+					bits[i].style.top=(9999-dropbits)+'px';
+					++dropbits;
+					}
+				
+			}
+			for(var i=0; i<dropbits; ++i)
+			{
+				bits[i].style.top='9999px'
+			}
+		}
+		setInterval(move,40);
+		setInterval(bitmove,40);
+		function cl(event)
+		{
+			if(0==0)
+			{
+				n[n.length]=document.createElement('img');
+				n[n.length-1].src='Krowiwa.png';
+				n[n.length-1].className='ketch';
+				n[n.length-1].style.left=event.currentTarget.style.left;
+				n[n.length-1].style.top=event.currentTarget.style.top;
+				n[n.length-1].style.zIndex=0;
+				opac[opac.length]=1;
+				body.appendChild(n[n.length-1]);
+				for(i=0;i<2;++i)
+					{
+					var index=bits.length;
+					bits[index]=document.createElement('div');
+					bits[index].className='bit';
+					body.appendChild(bits[index]);
+					
+					bits[index].style.left=event.currentTarget.style.left;
+					bits[index].style.top=event.currentTarget.style.top;
+					bitdy[index]=-20*Math.random();
+					bitdx[index]=(i*2-1)*20*Math.random();
+					}
+				event.currentTarget.style.left=Math.random()*(cx-80)+'px';
+				dx[i]=Math.random()*20-10;
+				dy[i]=-(Math.random()*cy/2+cy)/45;
+				event.currentTarget.style.top=cy+160+'px';
+				++o4ki;
+				var b=document.getElementById('text');
+				b.innerHTML=' Ochki: <b>'+o4ki+'</b>';
+			}
+		}
+		function opa()
+		{
+			for(i=udk;i<n.length;++i)
+			{
+				if(opac[i] == 1)
+					{
+					opac[i]=0.995;
+					n[i].style.opacity = '0.995';
+					}
+				else if(opac[i] > 0.2)
+					{
+					opac[i]=parseFloat(n[i].style.opacity);
+					opac[i]-=0.005;
+					n[i].style.opacity = opac[i];
+					}
+				else
+					{
+					++udk;
+					}
+				
+			}
+		}
+		setInterval(opa,40)
+		function mo(event)
+		{
+			var tx=event.clientX;
+			var ty=event.clientY;
+			n[n.length]=document.createElement('img');
+			n[n.length-1].src='Krowiwa.png';
+			n[n.length-1].className='ketch';
+			n[n.length-1].style.left=tx+'px';
+			n[n.length-1].style.top=ty+'px';
+			n[n.length-1].style.width='10px';
+			n[n.length-1].style.height='10px';
+			n[n.length-1].style.zIndex=1;
+			opac[opac.length]=1;
+			body.appendChild(n[n.length-1]);
+		}
+		function go()
+		{
+			document.write('sdox((((( <br/> i sobral ochkov '+o4ki);
+		}
+		</script>
+	</body>
+</html>
+

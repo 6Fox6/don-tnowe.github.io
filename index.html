@@ -1,0 +1,122 @@
+<meta charset="UTF-8">
+<html>
+	<head>
+		<title>Redblade Games</title>
+		<link rel="stylesheet" href="style.css"/>
+	</head>
+	<body>
+		<div id="header">
+		<img src="img/logo.png" /> 
+		</div>
+		<div id="content">
+		<div class="divisor"></div>
+		<div id="bio">
+			<h3>Hello! I'm Don-tnowe. I make games!</h3>
+			<p>
+				I work solo on videogames, and have experience mostly with mobile games. This site contains demos and examples of my works. 
+				Most are old and made with Construct, but now I'm more comfortable with Godot 3.
+			</p>
+			<p>
+				About me:
+			</p>
+			<ul>
+				<li> Can Godot 3 (2D only, GDScript);</li>
+				<li> Can Git;</li>
+				<li> Dabble in art;</li>
+				<li> Dabble in sound design, music composition;</li>
+				<li> Like working with UI/UX, game feel.</li>
+			</ul>
+			<div class="links">
+				<a href="https://t.me/don_tnowe"><div style="background-color:#5EB5F7">My Telegram</div></a>
+				<a href="https://don-tnowe.itch.io"><div style="background-color:#FF2449">My Itch</div></a>
+				<a href="https://www.youtube.com/channel/UCaK57Mtvd3QYOgjrKJSujHg"><div style="background-color:#EE0000">My Youtube</div></a>
+			</div>
+		</div>
+		<div class="divisor"></div>
+		<div class="divisor"></div>
+		<a href="https://play.google.com/store/apps/details?id=com.rbgames.gternity">
+			<div class="gamediv">
+				<div class="gameimg" style="background-image:url(img/PF13.gif);">
+				<img class="imgvanish" src="img/gray/PF13.gif"/> 
+				</div>
+				<div class="gamedesc">
+					<h3>Grinternity: Room One</h3>
+					First published game! Boring top-down shooter about incrementing damage numbers. <br/>Available for Android.
+				</div>
+			</div>
+		</a>
+		<div class="divisor"></div>
+		<a href="dream/index.html">
+			<div class="gamediv">
+				<div class="gameimg" style="background-image:url(img/PF15.gif);">
+				<img class="imgvanish" src="img/gray/PF15.gif"/> 
+				</div>
+				<div class="gamedesc">
+					<h3>Brightest Dungeon</h3>
+					JRPG-style combat demo. Press Q to enable audio.
+				</div>
+			</div>
+		</a>
+		<div class="divisor"></div>
+		<a href="Onslaught/index.html">
+			<div class="gamediv">
+				<div class="gameimg" style="background-image:url(img/PF3.gif);">
+				<img class="imgvanish" src="img/gray/PF3.gif"/> 
+				</div>
+				<div class="gamedesc">
+					<h3>Spell Crafter</h3>
+					Drag-and-drop spell making puzzle. 
+				</div>
+			</div>
+		</a>
+		<div class="divisor"></div>
+		<a href="Balls/index.html">
+			<div class="gamediv">
+				<div class="gameimg" style="background-image:url(img/PF4.gif);">
+				<img class="imgvanish" src="img/gray/PF4.gif"/> 
+				</div>
+				<div class="gamedesc">
+					<h3>Ball Simulator</h3>
+					Bouncing balls. Use mouse buttons or numeric keys to do stuff.
+				</div>
+			</div>
+		</a>
+		<div class="divisor"></div>
+		<a href="Dragonbrush/index.html">
+			<div class="gamediv">
+				<div class="gameimg" style="background-image:url(img/PF17.gif);">
+				<img class="imgvanish" src="img/gray/PF17.gif"/> 
+				</div>
+				<div class="gamedesc">
+					<h3>Curvy dragons</h3>
+					Draw with the dragon curve fractal. Parameters are hidden by screen edges. [Rightclick] to place, [S] for stars, [C] to clear.
+				</div>
+			</div>
+		</a>
+		<div class="divisor"></div>
+		<a href="Ships/index.html">
+			<div class="gamediv">
+				<div class="gameimg" style="background-image:url(img/PF18.gif);">
+				<img class="imgvanish" src="img/gray/PF18.gif"/> 
+				</div>
+				<div class="gamedesc">
+					<h3>Random ships</h3>
+					Randomized ships! Click to spawn. Draw shape on the right, configure color in the corner. Differently colored ships will fight!
+				</div>
+			</div>
+		</a>
+		<div class="divisor"></div>
+		<a href="fire/index.html">
+			<div class="gamediv">
+				<div class="gameimg" style="background-image:url(img/PF16.gif);">
+				<img class="imgvanish" src="img/gray/PF16.gif"/> 
+				</div>
+				<div class="gamedesc">
+					<h3>Neat fire</h3>
+					Fire. Sliders, buttons and tickboxes customize the appearance.
+				</div>
+			</div>
+		</a>
+		<div class="divisor"></div>
+	</body>
+</html>
