@@ -1,5 +1,5 @@
 body{
-background-color:#222;
+background-color:#442222;
 -moz-user-select: none;
 -webkit-user-select: none;
 -khtml-user-select: none;
@@ -20,25 +20,6 @@ font-size: 32px;
 margin-bottom: 0;
 margin-top: 0;
 }
-.gamedesc{
-width:100%;
-padding:20px;
-float:left;
-box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,0.75);
-transition: 0.3s;
-transition-property: background;
-background-color: #333333;
-}
-a:hover .gamedesc{
-transition:0.3s;
-background-color:#BB0000;
-}
-.imgvanish{
-opacity:1.0;
-width:100%;
-transition:0.3s;
-height:100%;
-}
 a:hover .imgvanish{
 opacity:0.0;
 transition:0.3s;
@@ -46,35 +27,36 @@ transition:0.3s;
 .links{
 color:#FFF;
 display:flex;
-margin:40px 25px 25px 25px;
+margin:40px 0px 10px 25px;
 height:60px;
-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
-}
-.links div{
-font-weight: bold;
-padding:15px;
-text-align: center;
-width: 100%;
-transition:0.3s;
-transition-property:box-shadow;
-box-shadow: none;
 }
 .links a{
 width: 100%;
 margin-right:30px;
 }
-.links div:hover{
+.links div{
+box-shadow: inset 15px 15px 8px 0px rgba(0,0,0,0.2);
+font-weight: bold;
+margin-right:10px;
+text-align: center;
+width: 100%;
 transition:0.3s;
-background-color: #333333;
-box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,0.75);
+}
+.linkshadow{
+padding-top:12px;
+padding-bottom:12px;
+}
+.linkshadow:hover{
+transition:0.3s;
+background-color: #FFF;
+color: #BB0000;
+box-shadow: inset 15px 15px 8px 0px rgba(0,0,0,0.2);
 }
 #main
 {
 background-color:#FFF;
--webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
-padding:20px;
+box-shadow: 15px 15px 5px 0px rgba(0,0,0,0.5);
+padding:35px;
 margin-top: 160px;
 margin-left: 10%;
 margin-right: 10%;
