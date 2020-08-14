@@ -36,7 +36,7 @@ background-size: 100% 100%;
 width:360px;
 }
 .gamedesc{
-box-shadow: inset 0px 22px 5px -5px rgba(255,255,255,0.25);
+box-shadow: inset 0px 22px 5px -5px rgba(128,63,63,0.25);
 padding:15px;
 float:left;
 transition: 0.3s;
