@@ -107,6 +107,15 @@ background-color: #FFF;
 color: #BB0000;
 box-shadow: inset 15px 15px 8px 0px rgba(0,0,0,0.2);
 }
+.contacttext{
+padding-top:4px;
+color: #AAA;
+padding-bottom:4px;
+padding-right:16px;
+}
+.contacttext>span{
+user-select:all;
+}
 .divisor{
 height:75px;
 }
