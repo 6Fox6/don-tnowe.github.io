@@ -137,5 +137,6 @@ padding:35px;
 margin-left: 10%;
 margin-right: 10%;
 margin-bottom: -60px;
-color:#333
+color:#333;
+user-select: text; 
 }
