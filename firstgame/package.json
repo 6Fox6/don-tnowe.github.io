@@ -1,0 +1,21 @@
+{
+	"main": "index.html",
+	"name": "Starlight Soldier",
+	"description": "[[[description]]]",
+	"version": "alpha 0.1",
+	"single-instance": [[[single-instance]]],
+	"window": {
+		"icon": "logo.png",
+		"toolbar": false,
+		"width": [[[width]]],
+		"height": [[[height]]],
+		"position": "center",
+		"resizable": [[[resizable]]],
+		"frame": [[[frame]]],
+		"kiosk": [[[kiosk]]],
+		"show": true
+	},
+	"dom_storage_quota": 50,
+	"user-agent": "Mozilla/5.0 (%osinfo) AppleWebKit/%webkit_ver (KHTML, like Gecko, Chrome, Safari) NodeWebkit/%nwver",
+	"chromium-args": "--disable-extensions --disable-plugins --disable-internal-flash --disable-popup-blocking --enable-gamepad --enable-html5-camera --allow-file-access-from-files --disable-software-rasterizer"
+}
