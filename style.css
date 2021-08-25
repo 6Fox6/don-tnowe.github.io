@@ -12,6 +12,14 @@ font-family:Calibri;
 color:#FFFFFF;
 text-decoration:none;
 }
+button{
+box-shadow: inset 15px 15px 8px 0px rgba(0,0,0,0.2);
+font-weight: bold;
+text-align: center;
+width: 100%;
+transition: 0.3s;
+transition-property: background-color;
+}
 div{
 font-size: 24px;
 }
