@@ -1,151 +1,222 @@
 body{
-background-color:#442222;
--moz-user-select: none;
--webkit-user-select: none;
--khtml-user-select: none;
-user-select: none; 
-font-family:Calibri;
-color:#FFFFFF;
+    background-color:#442222;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    user-select: none; 
+    font-family:Calibri;
+    color:#FFFFFF;
 }
 a{
-font-family:Calibri;
-color:#FFFFFF;
-text-decoration:none;
+    font-family:Calibri;
+    color:#FFFFFF;
+    text-decoration:none;
 }
 button{
-box-shadow: inset 15px 15px 8px 0px rgba(0,0,0,0.2);
-font-weight: bold;
-text-align: center;
-width: 100%;
-transition: 0.3s;
-transition-property: background-color;
+    box-shadow: inset 15px 15px 8px 0px rgba(0,0,0,0.2);
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    transition: 0.3s;
+    transition-property: background-color;
 }
 div{
-font-size: 24px;
+    font-size: 24px;
 }
 h3{
-font-size: 32px;
-margin-bottom: 0;
-margin-top: 0;
+    font-size: 32px;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 p{
-margin-top: 5px;
+    margin-top: 5px;
 }
 .gamediv{
-display: flex;
-height:200px;
-box-shadow: 15px 15px 5px 0px rgba(0,0,0,0.5);
-margin-left:30px;
-margin-right:30px;
-transition: 0.3s;
-transition-timing-function: ease-out;
+    display: flex;
+    height:250px;
+    box-shadow: 15px 15px 5px 0px rgba(0,0,0,0.5);
+    margin-left:30px;
+    margin-right:30px;
+    transition: 0.3s;
+    transition-timing-function: ease-out;
+}
+.gamediv>p{
+    height: 100%;
 }
 .gamediv:hover{
-height:240px;
-transition: 0.3s;
-transition-timing-function: ease-out;
-margin-top: -20px;
-margin-bottom: -20px;
+    height:300px;
+    transition: 0.3s;
+    transition-timing-function: ease-out;
+    margin-top: -25px;
+    margin-bottom: -25px;
 }
 .gamediv:hover .gameimg{
-width:432px;
-transition: 0.3s;
-transition-timing-function: ease-out;
+    width:540px;
+    transition: 0.3s;
+    transition-timing-function: ease-out;
 }
 .gameimg{
-background-repeat: no-repeat;
-background-size: 100% 100%;
-width:360px;
-transition: 0.3s;
-transition-property: width;
-transition-timing-function: ease-out;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width:375px;
+    transition: 0.3s;
+    transition-property: width;
+    transition-timing-function: ease-out;
 }
 .gamedesc{
-box-shadow: inset 0px 22px 5px -5px rgba(128,63,63,0.25);
-padding:15px;
-float:left;
-transition: 0.3s;
-transition-property: background;
-background-color: #333333;
-width:100%;
+    box-shadow: inset 0px 22px 5px -5px rgba(128,63,63,0.25);
+    padding:15px;
+    float:left;
+    transition: 0.3s;
+    transition-property: background;
+    background-color: #333333;
+    width:100%;
+    position: relative;
 }
 .gamedesc div{
-margin-right:20px;
+    margin-right: 20px;
 }
-
-a:hover .gamedesc{
-transition:0.3s;
-background-color:#BB0000;
+.gamelink{
+    box-shadow: inset 15px 15px 8px 0px rgba(0,0,0,0.2);
+    font-weight: bold;
+    text-align: center;
+    height: 0;
+    min-width: 50px;
+    transition: 0.3s;
+    margin: 15px 0 15px 0;
+    visibility: hidden;
+    width: auto;
+}
+.gamelink:hover>div{
+    transition: 0.3s;
+    background-color: #FFF;
+    color: #BB0000;
+}
+.gamelink>div{
+    padding: 0;
+    padding-top: 0;
+    margin: 0;
+    height: 40px;
+    transition: 0.3s;
+}
+.gamelink>div>div{
+    margin-left: 20px;
+    font-size: 0;
+    margin-top: 0;
+    transition: 0.3s;
+    width: 160px;
+}
+.gamediv:hover .gamelink>div{
+    padding: 10px;
+    padding-top: 10px;
+}
+.gamediv:hover .gamelink>div>div{
+    padding-top: 0;
+    font-size: 24;
+    margin-top: 5px;
+    transition: 0.3s;
+    width: 120px;
+}
+.gamediv:hover .gamelink{
+    color: #FFF;
+    height: 60px;
+    transition: 0.3s;
+    visibility: visible;
+}
+.gamediv:hover .gamelink>div>img{
+    width: 40px;
+    height: 40px;
+    opacity:1.0;
+    transition:0.3s;
+}
+.gamelink img{
+    filter: hue-rotate(0);
+    opacity:0.0;
+    width: 0;
+    height: 0;
+    transition:0.3s;
+}
+.gamelink:hover>div>img{
+    filter: invert(0.8) sepia(1.0) hue-rotate(340deg) saturate(1000%);
+}
+.gamelinks{
+    align-items: end;
+    display: flex;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
 }
 .imgvanish{
-opacity:1.0;
-width:100%;
-transition:0.3s;
-height:100%;
+    opacity:1.0;
+    width:100%;
+    transition:0.3s;
+    height:100%;
 }
-a:hover .imgvanish{
-opacity:0.0;
-transition:0.3s;
+.gamediv:hover .imgvanish{
+    opacity:0.0;
+    transition:0.3s;
 }
 .links{
-color:#FFF;
-display:flex;
-margin:40px 0px 10px 25px;
-height:60px;
+    color:#FFF;
+    display:flex;
+    margin:40px 0px 10px 25px;
+    height:60px;
 }
 .links a{
-width: 100%;
-margin-right:30px;
+    width: 100%;
+    height: 100%;
+    margin-right:30px;
 }
-.links div{
-box-shadow: inset 15px 15px 8px 0px rgba(0,0,0,0.2);
-font-weight: bold;
-text-align: center;
-width: 100%;
-transition: 0.3s;
-transition-property: background-color;
+.links>div{
+    box-shadow: inset 15px 15px 8px 0px rgba(0,0,0,0.2);
+    width: 100%;
+    transition: 0.3s;
+    transition-property: background-color;
 }
 .linkshadow{
-padding-top:12px;
-padding-bottom:12px;
+    padding-top:12px;
+    padding-bottom:12px;
+    box-shadow: inset 15px 15px 8px 0px rgba(0,0,0,0.2);
+    text-align: center;
+    font-weight: bold;
 }
 .linkshadow:hover{
-transition:0.3s;
-background-color: #FFF;
-color: #BB0000;
-box-shadow: inset 15px 15px 8px 0px rgba(0,0,0,0.2);
+    transition:0.3s;
+    background-color: #FFF;
+    color: #BB0000;
 }
 .contacttext{
-padding-top:4px;
-color: #AAA;
-padding-bottom:4px;
-padding-right:16px;
+    padding-top:4px;
+    color: #AAA;
+    padding-bottom:4px;
+    padding-right:16px;
 }
 .contacttext>span{
-user-select:all;
+    user-select:all;
 }
 .divisor{
-height:75px;
-width:100%;
+    height:75px;
+    width:100%;
 }
 #header{
-background-color:#BB0000;
-width:100%;
-height:100px;
-box-shadow: 15px 15px 5px 0px rgba(0,0,0,0.5);
+    background-color:#BB0000;
+    width:100%;
+    height:100px;
+    box-shadow: 15px 15px 5px 0px rgba(0,0,0,0.5);
 }
 #content{
-width:100%;
-padding:none;
+    width:100%;
+    padding:none;
 }
 #bio
 {
-background-color:#FFF;
-box-shadow: 15px 15px 5px 0px rgba(0,0,0,0.5);
-padding:35px;
-margin-left: 10%;
-margin-right: 10%;
-margin-bottom: -60px;
-color:#333;
-user-select: text; 
+    background-color:#FFF;
+    box-shadow: 15px 15px 5px 0px rgba(0,0,0,0.5);
+    padding:35px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: -60px;
+    color:#333;
+    user-select: text; 
 }
