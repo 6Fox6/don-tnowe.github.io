@@ -1,16 +1,5 @@
 [
     {
-        "img": "PF29",
-        "title": "Vexdrift",
-        "desc": 
-            "Orbit around microplanets in space, turn them against each other! Originally made in 48 hours for GMTK Jam of 2021, currently in development.",
-        "links": {
-            "now": "gmtk21/index.html",
-            "itch": "https://don-tnowe.itch.io/vexdrift",
-            "gp": "subscribe/index.html"
-        }
-    },
-    {
         "img": "PF31",
         "title": "Must Finish Tonight!",
         "desc": 

@@ -77,7 +77,6 @@ p{
     margin-right: 20px;
 }
 .gamelink{
-    box-shadow: inset 15px 15px 8px 0px rgba(0,0,0,0.2);
     font-weight: bold;
     text-align: center;
     height: 0;
@@ -93,6 +92,9 @@ p{
     color: #BB0000;
 }
 .gamelink>div{
+    box-shadow: inset 15px 15px 8px 0px rgba(0,0,0,0.2);
+    transition: 0.3s;
+	transition-property: background-color;
     padding: 0;
     padding-top: 0;
     margin: 0;
@@ -180,6 +182,8 @@ p{
     box-shadow: inset 15px 15px 8px 0px rgba(0,0,0,0.2);
     text-align: center;
     font-weight: bold;
+    transition: 0.3s;
+    transition-property: background-color;
 }
 .linkshadow:hover{
     transition:0.3s;
