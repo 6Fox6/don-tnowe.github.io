@@ -70,6 +70,16 @@
         }
     },
     {
+        "img": "PF21",
+        "title": "Squall",
+        "desc": 
+            "Racing game where steering is not as reliable! Use the dash brake or bounce off at the right angle on sharp turns.",
+        "links": {
+            "now": "squall/index.html",
+            "itch": "https://don-tnowe.itch.io/squall"
+        }
+    },
+    {
         "img": "PF22",
         "title": "This Will Be My Cycle",
         "desc": 
