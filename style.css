@@ -98,7 +98,7 @@ p{
     padding: 0;
     padding-top: 0;
     margin: 0;
-    height: 40px;
+    height: 0;
     transition: 0.3s;
 }
 .gamelink>div>div{
@@ -111,6 +111,7 @@ p{
 .gamediv:hover .gamelink>div{
     padding: 10px;
     padding-top: 10px;
+    height: 40px;
 }
 .gamediv:hover .gamelink>div>div{
     padding-top: 0;
@@ -128,7 +129,7 @@ p{
 .gamediv:hover .gamelink>div>img{
     width: 40px;
     height: 40px;
-    opacity:1.0;
+    opacity: 1.0;
     transition:0.3s;
 }
 .gamelink img{
@@ -169,12 +170,6 @@ p{
     width: 100%;
     height: 100%;
     margin-right:30px;
-}
-.links>div{
-    box-shadow: inset 15px 15px 8px 0px rgba(0,0,0,0.2);
-    width: 100%;
-    transition: 0.3s;
-    transition-property: background-color;
 }
 .linkshadow{
     padding-top:12px;
