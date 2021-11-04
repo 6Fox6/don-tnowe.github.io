@@ -3,7 +3,7 @@
         "img": "PF31",
         "title": "Must Finish Tonight!",
         "desc": 
-            "Finish your game while your house gets destroyed. Don't forget to pay attention to hazards!<br/>This one's made in 48 hours as well.",
+            "Finish your game while your house gets destroyed. Don't forget to pay attention to hazards! And resize your browser window if something doesn't work.<br/>This one's made in 48 hours as well.",
         "links": {
             "now": "finishtonight/index.html"
         }
@@ -12,7 +12,7 @@
         "img": "PF30",
         "title": "Tap Tap Acapella",
         "desc": 
-            "A rhythm game. My first project in Unity, in 48 hours, and I made a custom Inspector display for the level editor. And apparently, synchronizing visuals with music isn't just about making a timer...",
+            "A rhythm game. My first project in Unity, in 48 hours. Apparently, synchronizing visuals with music isn't just about making a timer...",
         "links": {
             "now": "squall/index.html",
             "itch": "https://don-tnowe.itch.io/squall"
@@ -147,7 +147,7 @@
         "img": "PF27",
         "title": "Starlight Soldier",
         "desc": 
-            "Shmup with upgrades. First game I finished. Ah, memories... 2014.<br/>W/S to move, Left-click to attract currency to mouse and break asteroids, Shift to fire.",
+            "Shmup with upgrades. First game I finished back in 2014.<br/>W/S to move, Left-click to attract currency to mouse and break asteroids, Shift to fire.",
         "links": {
             "now": "firstgame/index.html"
         }
