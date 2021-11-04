@@ -33,7 +33,11 @@ app.get("/", function (request, response) {
         }
         let contents = fs.readFileSync("./students/" + group + ".txt");
         response.write("Группа " + group + "<br/>")
-        response.end(contents.toString().replace(/\n/g, "<br/>"));
+        response.end(contents.toString().toLowerCase().replace(/\n/g, "<br/>"));
+    }
+    else if (task == "2") {
+        let contents = fs.readFileSync("./lab2.html");
+        response.end(contents);
     }
     else {
         let contents = fs.readFileSync("./index.html");
