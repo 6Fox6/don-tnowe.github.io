@@ -9,10 +9,18 @@
 
 <body>
 	<div>
-		<button onclick=""> </button>
+		<p>Введіть код групи (є групи: %groups%)</p>
+		<input type="text" id="groupinput" onchange="textchange();"></input>
+		<a id="gobutton" href="">Go</a>
 	</div>
 </body>
 <script>
+	let groupinput = document.getElementById("groupinput");
+	let gobutton = document.getElementById("gobutton");
+
+	function textchange(){
+		gobutton.setAttribute("href", "?task=1&group=" + groupinput.value);
+	}
 </script>
 
 </html>
