@@ -5,16 +5,15 @@ const app = express();
 app.get("/", function (request, response) {
     response.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
 
-    let params = request.url.substring(request.url.lastIndexOf("/?") + 2).split("&");
+    let task = request.query.task;
 
-    console.log(params);
-    if (params.length == 0) {
+    if (task == undefined) {
         let contents = fs.readFileSync("./index.html");
         response.end(contents);
         return;
     }
-    if (params[0] == "task=1") {
-        if (params.length == 1) {
+    if (task == "1") {
+        if (request.query.group == undefined) {
             let contents = fs.readFileSync("./students.html").toString();
             response.end(contents.replace("%groups%", returnArr = fs.readdirSync("./students").reduce(
                 (prev, cur) => {
@@ -27,7 +26,7 @@ app.get("/", function (request, response) {
             ));
             return;
         }
-        let group = params[1].substring("group=".length);
+        let group = request.query.group;
         if (!fs.existsSync("./students/" + group + ".txt")) {
             response.end("Групи " + group + " не існує!");
             return;
